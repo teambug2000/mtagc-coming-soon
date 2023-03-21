@@ -28,32 +28,17 @@ class ComingSoon extends Component {
       text: "Coming Soon!",
     },
     description: {
-      text: "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available.",
+      text: "MTAGC 15th Anniversary",
     },
     subscribe: {
-      placeholder: "Enter Email Address",
+      placeholder: "Nhập Email để nhận thông báo mới nhất!",
       buttonText: "Submit",
     },
     links: [
       {
-        url: "https://www.facebook.com/groups/CodingFromNull",
+        url: "https://www.facebook.com/MTAGC",
         logo: facebook,
-        text: "Join",
-      },
-      {
-        url: "https://www.instagram.com/codingfromnull",
-        logo: instagram,
-        text: "Follow",
-      },
-      {
-        url: "https://www.youtube.com/channel/UC9Psp9-p9jgHfDBReAAcZ3w",
-        logo: youtube,
-        text: "Watch",
-      },
-      {
-        url: "https://www.twitter.com/CodingFromNull",
-        logo: twitter,
-        text: "Tweet",
+        text: "Theo dõi",
       },
     ],
     notification: {
