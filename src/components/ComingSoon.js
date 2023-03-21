@@ -17,66 +17,65 @@ import "../styles/ComingSoon.css";
 class ComingSoon extends Component {
   state = {
     countdown: {
-      countdownDate: "2020-12-31 00:00:00"
+      countdownDate: "2023-05-12 18:30:00",
     },
     logo: {
       alt: "Spinning Gear",
       src: logo,
-      spinSpeed: "slow"
+      spinSpeed: "slow",
     },
     title: {
-      text: "Coming Soon!"
+      text: "Coming Soon!",
     },
     description: {
-      text:
-        "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available."
+      text: "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available.",
     },
     subscribe: {
       placeholder: "Enter Email Address",
-      buttonText: "Submit"
+      buttonText: "Submit",
     },
     links: [
       {
         url: "https://www.facebook.com/groups/CodingFromNull",
         logo: facebook,
-        text: "Join"
+        text: "Join",
       },
       {
         url: "https://www.instagram.com/codingfromnull",
         logo: instagram,
-        text: "Follow"
+        text: "Follow",
       },
       {
         url: "https://www.youtube.com/channel/UC9Psp9-p9jgHfDBReAAcZ3w",
         logo: youtube,
-        text: "Watch"
+        text: "Watch",
       },
       {
         url: "https://www.twitter.com/CodingFromNull",
         logo: twitter,
-        text: "Tweet"
-      }
+        text: "Tweet",
+      },
     ],
     notification: {
       src: "",
       alt: "",
       message: "",
       visible: false,
-      level: ""
-    }
+      level: "",
+    },
   };
 
-  configureNotification = obj => {
+  configureNotification = (obj) => {
     const notification = { ...this.state.notification };
     notification.message = obj.body.msg;
     if (obj.status === 200) {
-      notification.src = check
-      notification.alt = "Check Mark"
-      notification.level = "success"
+      notification.src = check;
+      notification.alt = "Check Mark";
+      notification.level = "success";
     } else {
-      notification.src = xmark
-      notification.alt = "X Mark"
-      notification.level = "error"
+      notification.src = xmark;
+      notification.alt = "X Mark";
+      notification.level = "error";
     }
     this.setState({ notification });
   };
@@ -111,7 +110,7 @@ class ComingSoon extends Component {
       subscribe,
       links,
       countdown,
-      notification
+      notification,
     } = this.state;
 
     return (
