@@ -9,6 +9,7 @@ import logo from "../images/gear-with-holes.svg";
 import xmark from "../images/x-mark.svg";
 import check from "../images/check-mark.svg";
 import facebook from "../images/fbookicon.svg";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 import "../styles/ComingSoon.css";
 
@@ -117,6 +118,10 @@ class ComingSoon extends Component {
           showNotification={this.showNotification}
         />
         <Links links={links} />
+        <MessengerCustomerChat
+          pageId="280691181957056"
+          appId="757488145614475"
+        />
       </div>
     );
   }
