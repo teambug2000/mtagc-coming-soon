@@ -19,11 +19,12 @@ html {
 }
 
 body {
-  background-image: url(../images/floating-cogs.svg);
-  background-color: var(--darkGrey);
+  background-image: url(../images/Web\ BG.webp);
+  background-color: var(--black);
   min-height: calc(100vh - 100px);
-  margin: 10px;
+  margin:10px;
   background-attachment: fixed;
+  background-size: 100%;
 }
 
 *,
