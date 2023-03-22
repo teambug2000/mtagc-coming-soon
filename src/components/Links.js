@@ -29,9 +29,9 @@ Links.propTypes = {
     PropTypes.shape({
       url: PropTypes.string.isRequired,
       logo: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired
+      text: PropTypes.string.isRequired,
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default Links;
