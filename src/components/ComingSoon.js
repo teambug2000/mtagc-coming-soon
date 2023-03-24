@@ -16,7 +16,7 @@ import "../styles/ComingSoon.css";
 class ComingSoon extends Component {
   state = {
     countdown: {
-      countdownDate: "2023-05-12 18:30:00",
+      countdownDate: "2023-05-13 18:30:00",
     },
     logo: {
       alt: "Spinning Gear",
